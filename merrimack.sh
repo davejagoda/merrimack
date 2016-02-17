@@ -2,7 +2,7 @@
 # version 0.1
 # main shell script, suitable for calling from cron
 
-TopLevelLogDirectory="$HOME/Merrimack/log"
+TopLevelLogDirectory="$HOME/merrimack/log"
 if [ ! -d $TopLevelLogDirectory ]; then
     echo 'no top level log directory, creating'
     mkdir -p $TopLevelLogDirectory
