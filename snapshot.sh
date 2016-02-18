@@ -10,4 +10,5 @@ fi
 
 source ~/venv/moave/bin/activate
 export PYTHONIOENCODING=utf8
+~/src/github/proggy/python/iso3166-1.py > $TopLevelSnapshotDirectory/iso3166-1.`date "+%Y-%m-%dT%H:%M:%S%z"`.snapshot
 ~/src/github/proggy/python/kyoiku_kanji.py -0 > $TopLevelSnapshotDirectory/kyoiku_kanji.`date "+%Y-%m-%dT%H:%M:%S%z"`.snapshot
