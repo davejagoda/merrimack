@@ -14,7 +14,7 @@ fi
 
 # is it a valid file?
 
-if [ -L $lt ]; then
+if [ -e $lt ]; then
     echo $lt "is a valid file"
 else
     echo $lt "is not a valid file"
