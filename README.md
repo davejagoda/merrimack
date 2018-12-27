@@ -15,3 +15,14 @@ Ways to monitor:
 - capture if it changes
   - `snapshot` directory
   - pruner to delete duplicates and email upon changes
+
+# specific snapshots currently taken
+  - iso3166-1
+  - iso3166-2
+  - kyoiku_kanji
+
+# snaphots to be added
+  - area codes
+  - timezone database changes
+  - tickers added/deleted to stock markets
+  - git repos added/deleted/changed
