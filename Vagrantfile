@@ -8,6 +8,7 @@ $script = <<-SCRIPT
 hostname #{HOSTNAME}
 MY_IP=$(ip addr show dev eth0 | grep inet | grep -v inet6 | cut -d / -f 1 | rev | cut -d ' ' -f 1 | rev)
 echo "${MY_IP} #{HOSTNAME}" >> /etc/hosts
+dnf -y install at-spi2-atk atk gtk3 java-atk-wrapper libXt libgbm nodejs nss pango
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
