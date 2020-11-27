@@ -6,7 +6,10 @@ async function run() {
   const url = process.env.URL;
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto(url);
+  const response = await page.goto(url);
+  console.log(response.headers());
+  const status = response.status();
+  console.log(status);
   const filename = 'merrimack' + start_epoch.toISOString() + '.png';
   await page.screenshot({path: filename, fullPage: true});
   const title = await page.title();
